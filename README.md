@@ -45,7 +45,8 @@ A abordagem incentiva os usuários a reconsiderarem a saída, potencialmente aum
 * Melhoria da Experiência do Usuário:
 A interface clara e informativa oferece uma experiência suave e atrativa, com informações relevantes e uma oferta tentadora.
 
-- Design do Layout: https://www.figma.com/design/BYS2FVM0PIn1BDaDbh3ITT/Teste-Nutralive?node-id=0-1&t=rXQl84ni87bPL1uT-1
+
+Design do Layout: https://www.figma.com/design/BYS2FVM0PIn1BDaDbh3ITT/Teste-Nutralive?node-id=0-1&t=rXQl84ni87bPL1uT-1
 
 Foi reproduzido o Layout do back redirect conforme a identidade visual da pagina disponibilizada pela empresa Nutrilive.
 
