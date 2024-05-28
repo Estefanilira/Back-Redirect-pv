@@ -1,0 +1,125 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    font-size: 2em;
+}
+
+h1 .highlight {
+    color: red;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 40px;
+    margin-top: 70px;;
+}
+
+.plans {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 300px;
+}
+
+.plan img {
+    max-width: 100%;
+    height: auto;
+}
+
+.plan .price {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.plan .savings {
+    color: #28a745;
+}
+
+.plan .btn {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.plan .btn:hover {
+    background-color: #218838;
+}
+
+.plan .free-shipping,
+.plan .shipping {
+    color: #777;
+    margin-top: 10px;
+}
+
+.plan .badge {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.plan.best-value .badge {
+    background-color: #28a745;
+}
+
+.plan.best-seller .badge {
+    background-color: #007bff;
+}
+
+.garantia {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 40px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.garantia h3 {
+    color: #28a745;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    margin-top: 40px;
+    font-size: 0.8em;
+}
+
+footer p {
+    margin: 5px 0;
+}
