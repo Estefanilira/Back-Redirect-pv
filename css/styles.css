@@ -186,21 +186,20 @@ h2 {
 /* Final cards */
 
 /* Inicio depoimentos */
+h2 {
+    text-align: center;
+    color: #333;
+}
 
+h2 span {
+    color: #007bff;
+}
 .testimonials {
     max-width: 1200px;
     margin: 50px auto;
     padding: 20px;
     text-align: center;
-}
-
-.testimonials h2 {
-    text-align: center;
-    color: #333;
-}
-
-.testimonials h2 span {
-    color: #007bff;
+    display: flex;
 }
 
 .testimonial-container {
