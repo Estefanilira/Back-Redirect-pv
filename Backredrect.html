@@ -1,19 +1,43 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oferta Especial</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <div class="container">
         <h1>Parabéns!<br>Você acabou de ganhar um super <span class="highlight">desconto</span>.</h1>
-        <p class="subtitle">Oferta por tempo limitado</p>
-        
+        <!-- <p class="subtitle">Oferta por tempo limitado</p> -->
+        <div class="coupon-card">
+            <div class="coupon-header">
+                USE O SEU DESCONTO
+            </div>
+            <div class="coupon-details">
+                <p>+ POTE EXTRA</p>
+                <p>+ DESCONTO</p>
+                <p>+ FRETE GRÁTIS</p>
+                <small>*VÁLIDO PELOS PRÓXIMOS 15 MINUTOS</small>
+            </div>
+            <div class="timer">
+                <div class="time">
+                    <span id="minutes">15</span> Minutos
+                </div>
+                <div class="time">
+                    <span id="seconds">00</span> Segundos
+                </div>
+            </div>
+            <a href="#next-section" id="use-coupon-button">USAR DESCONTO</a>
+        </div>
+        <!-- <button id="use-coupon-button">USAR DESCONTO</button>
+        </div> -->
+
         <h2>Escolha o seu plano e GANHE + 1 pote grátis</h2>
-        
-        <div class="plans">
+
+        <div class="plans" id="next-section">
             <div class="plan best-value">
                 <p class="badge">Melhor valor</p>
                 <h2>12 Potes + 1</h2>
@@ -48,20 +72,66 @@
                 <p class="shipping">Frete: R$ 15,00</p>
             </div>
         </div>
-        
+
+        <section class="testimonials">
+            <h2>Veja os resultados de quem usa <span>BASE FLORA</span></h2>
+            <div class="testimonial">
+                <img src="img/ana.png" alt="Ana">
+                    <h3>Ana, 37 anos</h3>
+                    <p>Arquiteta</p>
+                <div class="testimonial-content">
+                    <p>“Há anos lutava contra a constipação crônica que me causava desconforto físico e emocional. Ficava dias sem ir ao banheiro. Tinha vergonha de falar sobre o assunto e sofria em silêncio. Tudo mudou quando descobri a Base Flora. Em poucas semanas, senti meu intestino funcionando regularmente pela primeira vez em anos. A sensação de leveza e alívio foi emocionante. Mais do que resolver meu problema físico, a Base Flora me devolveu a autoconfiança e a alegria de viver. Hoje, compartilho minha história para inspirar outras pessoas a cuidarem da sua saúde intestinal! O Base Flora foi meu ponto de virada!”</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <img src="img/carla.png" alt="Carla">
+                    <h3>Carla, 42 anos</h3>
+                    <p>Dona de casa</p>
+                <div class="testimonial-content">
+                    <p>“Como mãe de dois filhos pequenos, minha rotina sempre foi muito corrida e estressante. Isso acabou afetando minha saúde intestinal. Vivia com inchaço, gases e dores abdominais. Meu nutricionista recomendou o Base Flora e, no início, confesso que estava bem desconfiada. Mas já no primeiro semana de uso, percebi a diferença. Com o tempo, percebi que meu intestino estava mais regulado, pois eu tinha mais energia e disposição para cuidar da minha família. O Base Flora foi fundamental para que minha saúde fosse completamente transformada!”</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <img src="img/marcos.png" alt="Marcos">
+                    <h3>Marcos, 35 anos</h3>
+                    <p>Nutricionista</p>
+                <div class="testimonial-content">
+                    <p>“Passei anos da minha vida lutando contra a compulsão alimentar e a obesidade. Meu intestino estava sempre sobrecarregado e inflamado, o que afetava minha saúde física e mental. Quando conheci o Base Flora, não imaginava o impacto que ele teria na minha jornada de reeducação alimentar e saúde. Com o tempo, meu intestino sentiu-se renovado e passou a funcionar de forma mais eficiente. Minha compulsão foi diminuindo, e com isso, minha autoestima e qualidade de vida melhoraram drasticamente. O Base Flora foi uma peça-chave na minha transformação. Hoje, 40 kg mais leve, sou uma nova pessoa!”</p>
+                </div>
+            </div>
+        </section>
+
         <div class="garantia">
             <h3>Garantia de Satisfação 30 dias</h3>
-            <p>Acreditamos tanto em nossos produtos que oferecemos uma Garantia de Satisfação. Se você não estiver satisfeito com sua compra por qualquer motivo, em até 30 dias, devolvemos o valor investido no produto, integralmente.</p>
-            <p><small>*Aplicável apenas na primeira item da mesma produto adquirido. Consulte nossa Política de Trocas e Devoluções.</small></p>
+            <p>Acreditamos tanto em nossos produtos que oferecemos uma Garantia de Satisfação. Se você não estiver
+                satisfeito com sua compra por qualquer motivo, em até 30 dias, devolvemos o valor investido no produto,
+                integralmente.</p>
+            <p><small>*Aplicável apenas na primeira item da mesma produto adquirido. Consulte nossa Política de Trocas e
+                    Devoluções.</small></p>
         </div>
-        
+
+        <section class="specialist-section">
+            <div class="specialist-image">
+                <img src="img/doutor.png" alt="Dr. Sandro Haddad">
+            </div>
+            <div class="specialist-info">
+                <h2><span class="highlight-blue">Fórmula desenvolvida</span> <span class="highlight-green">por especialista</span></h2>
+                <p><strong>Dr. Sandro Haddad</strong> é farmacêutico, especialista em suplementação e plantas medicinais há mais 10 anos, formado pela Universidade do Espírito Santo. Além disso, é palestrante e pesquisador no campo da medicina natural e da capacidade de autocura do corpo humano.</p>
+            </div>
+        </section>
+
         <footer>
-            <p>© 2024 Nutralbase | Termos de uso | Política de privacidade | Política de troca e devolução | Estudos Científicos</p>
-            <p>Este produto não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença. Os resultados podem variar de pessoa para pessoa.</p>
-            <p>Me. Comércio Online Ltda. - CNPJ: 27.590.850/0001-00 - Av. Brigadeiro Waldemar Gomes Pinto, 234, São Paulo, SP - CEP: 27156-000</p>
+            <p>© 2024 Nutralbase | Termos de uso | Política de privacidade | Política de troca e devolução | Estudos
+                Científicos</p>
+            <p>Este produto não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença. Os resultados
+                podem
+                variar de pessoa para pessoa.</p>
+            <p>Me. Comércio Online Ltda. - CNPJ: 27.590.850/0001-00 - Av. Brigadeiro Waldemar Gomes Pinto, 234, São
+                Paulo,
+                SP - CEP: 27156-000</p>
         </footer>
     </div>
     <script src="script.js"></script>
 </body>
-</html>
 
+</html>

@@ -19,7 +19,7 @@ h1 {
 }
 
 h1 .highlight {
-    color: red;
+    color: #28a745;
 }
 
 .subtitle {
@@ -27,10 +27,93 @@ h1 .highlight {
     margin-bottom: 20px;
 }
 
+/* Cupom desconto */
+
+.coupon-card {
+    background-color: #007bff; /* Cor azul */
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.coupon-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.coupon-details p {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.coupon-details small {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.time {
+    background-color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+/* Animação de pulsar */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+#use-coupon-button {
+    background-color: #218838; /* Cor verde */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none; /* Remove underline */
+}
+
+#use-coupon-button:hover {
+    background-color: #1e7e34; /* Tom mais escuro do verde */
+    animation: pulse 0.6s infinite;
+}
+
+#next-section {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+
+/* Final cupom desconto */
+
 h2 {
     color: #333;
-    margin-bottom: 40px;
-    margin-top: 70px;;
+    margin-bottom: 20px;
+    margin-top: 90px;;
 }
 
 .plans {
@@ -100,6 +183,85 @@ h2 {
     background-color: #007bff;
 }
 
+/* Final cards */
+
+/* Inicio depoimentos */
+
+.testimonials {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.testimonials h2 {
+    text-align: center;
+    color: #333;
+}
+
+.testimonials h2 span {
+    color: #007bff;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    max-width: 30%;
+    box-sizing: border-box;
+}
+
+.testimonial img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.testimonial-content p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+.testimonial-content h3 {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.testimonial-content p:last-child {
+    font-weight: bold;
+    color: #666;
+}
+
+@media (max-width: 768px) {
+    .testimonial {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial {
+        max-width: 100%;
+    }
+}
+
+/* Final depoimentos */
+
 .garantia {
     background-color: #f9f9f9;
     padding: 20px;
@@ -111,6 +273,56 @@ h2 {
 .garantia h3 {
     color: #28a745;
 }
+/* SESSÃO DOUTOR INICIO */
+
+.specialist-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.specialist-image img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.specialist-info {
+    max-width: 600px;
+    padding-left: 20px;
+}
+
+.specialist-info h2 {
+    font-size: 24px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.specialist-info .highlight-blue {
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.specialist-info .highlight-green {
+    background-color: #218838;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.specialist-info p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* FINAL */
 
 footer {
     background-color: #333;
