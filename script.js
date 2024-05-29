@@ -3,7 +3,7 @@ window.addEventListener("beforeunload", handleBeforeUnload);
 window.addEventListener("popstate", handlePopstate);
 
 function redirectToBackRedirect() {
-    window.location.href = "backredrect.html";
+    window.location.href = "Backredrect.html";
 }
 // http://127.0.0.1:5500/Backredrect.html
 
